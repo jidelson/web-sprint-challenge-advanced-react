@@ -30,13 +30,48 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+There are three important rules or steps to stateful class components which is CCR
+which stands for class, constructor, and render/return. A basic layout for a class
+component would look something like this:
+
+  class *some name* extends Component {
+    constructor() {
+      super()
+      this.state = {
+        *some data*
+      }
+    }
+    render() {
+      <*Some Component*>
+    }
+  }
+
+  Of course we would need to import what we need at the top of the page.
+
 2. Describe the different phases of the component lifecycle.
+
+The component lifecycle has three main phases which are mounting, updating,
+and unmounting. These phases can be compared to birth, growth/life, and death. 
+Mounting is basically the component being born and starting its life and often
+our components will get updated which would obviously be the updating phase or in this comparison life/growth, and lastly the unmounting would be the component's finish or death.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+For example, if we were to go to a form on a webpage for what ever reason, when we 
+first see the form that would be it mounting, then we would fill out the form and 
+submit our information which would be that component updating, and finally when we
+moved on to another page on that website that would be it unmounting. 
+
 4. Define stateful logic.
 
+Stateful logic is any code that uses state, but in the case of hooks it is some
+action created by one or more hooks. It's like a bonus that can you add to a component
+where its value would be specific to that component, however more than one component
+can use that bonus so it is reusable. 
+
 5. Describe how to test a React component with React Testing Library.
+
+To test our React component with React Testing Library we make a file with the same name as the component we are testing and add a .test.js to it and then we write a test by declaring a name for our test, or what we are testing. Then we render the component we are testing, and we declare a variable to use in our test. We want to test our component being mindful of how the user would actually use it. So for example, if we have a form with a submit button, we could test that when we click that button it would submit our data.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
